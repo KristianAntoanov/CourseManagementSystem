@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Student\" />
+    <None Remove="Student\Command\" />
+    <None Remove="Student\Query\" />
+    <None Remove="Course\" />
+    <None Remove="Course\Command\" />
+    <None Remove="Course\Query\" />
+    <None Remove="StudentCourse\" />
+    <None Remove="StudentCourse\Command\" />
+    <None Remove="StudentCourse\Query\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Student\" />
+    <Folder Include="Student\Command\" />
+    <Folder Include="Student\Query\" />
+    <Folder Include="Course\" />
+    <Folder Include="Course\Command\" />
+    <Folder Include="Course\Query\" />
+    <Folder Include="StudentCourse\" />
+    <Folder Include="StudentCourse\Command\" />
+    <Folder Include="StudentCourse\Query\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CourseManagement.Services.Data\CourseManagement.Services.Data.csproj" />
+    <ProjectReference Include="..\CourseManagement.WebApi.IOModels\CourseManagement.WebApi.IOModels.csproj" />
+  </ItemGroup>
+</Project>

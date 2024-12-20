@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Student\" />
+    <None Remove="Course\" />
+    <None Remove="StudentCourse\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Student\" />
+    <Folder Include="Course\" />
+    <Folder Include="StudentCourse\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CourseManagement.Common\CourseManagement.Common.csproj" />
+  </ItemGroup>
+</Project>
